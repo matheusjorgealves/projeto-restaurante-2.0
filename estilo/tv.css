@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+/* Estilo para tv */
+
+
+i#burguer {
+    display: none;
+}
+
+
+nav#menu {
+    display: block;
+    background-color: var(--cor05);
+}
+
+
+nav > a {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    margin-right: 50px;
+    padding: 20px;
+    border-radius: 30px;
+}

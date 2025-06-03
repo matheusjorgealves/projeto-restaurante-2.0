@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+/* Estilo para tablet */
+
+
+i#burguer {
+    display: none;
+}
+
+
+nav#menu {
+    display: block;
+    background-color: var(--cor05);
+}
+
+
+nav > a {
+    display: inline-block;
+    width: 200px;
+    margin: 15px;
+    padding: 10px;
+}

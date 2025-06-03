@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziorze</title>
+    <link  href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo/style.css" media="all">
+    <link rel="stylesheet" href="../estilo/print.css" media="print">
+    <link rel="stylesheet" href="../estilo/tablet.css" media="screen and (min-width: 768px) and (max-width: 800px)">
+    <link rel="stylesheet" href="../estilo/pc.css" media="screen and (min-width: 800px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="../estilo/tv.css" media="screen and (min-width: 1200px)">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Ziorze</h1>
+        <p>il tuo ristorante di famiglia</p>
+    </header>
+
+
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <nav id="menu">
+        <a href="../comidas/comidas.html">Comidas</a>
+        <a href="../bebidas/bebidas.html">Bebidas</a>
+        <a href="../estatisticas/estatisticas.html">Estatísticas</a>
+        <a href="../index.html">Início</a>
+    </nav>
+
+
+    <main>
+        <h2>Um pouco sobre a nossa história</h2>
+        <p>A família Ziorze é uma tradicional família italiana. Durante o período da ditadura militar na Itália, nosso patriarca, Alessandro Enrico Ziorze veio refugiado para São Paulo, Brasil; aqui ele encontrou Maria de Lourdes Aparecida, a esposa dele e nossa matriarca.</p>
+        <p>Ambos passavam muitas dificuldades e as vezes não tinham nem o que comer, eles já tinham dois filhos na época, por conta disso Alessandro estava muito preocupado e insatisfeito com a situação da família, Ziorze era filho e aprendiz de um cozinheiro italiano, então teve a ideia de procurar emprego em algum restaurante local. Depois de muito esforço e muita boa lábia ele conseguiu o emprego em uma pizzaria; logo começou a se destacar e sua vida começou a mudar; ele foi ficando muito conhecido, e as pizzas que ele fazia eram extremo sucesso em São Paulo. Depois de anos e anos ganhando tanto dinheiro como funcionário destaque daquela pizzaria, ele decidiu sair de lá e criou o seu próprio restaurante, o restaurante Ziorze.</p>
+        <p>Nos primeiros anos do restaurante tudo foi muito bom, o sucesso foi muito grande, o restaurante Ziorze ficou conhecido em todo o estado de São Paulo como um dos melhores restaurantes do estado, principalmente por conta das comidas que remetiam sempre à culinária italiana. Depois de alguns anos Alessandro Ziorze recebeu um diagnóstico médico de cáncer, isso fez com que tudo mudasse; ele precisou abandonar seu restaurante, quem assumiu em seu lugar foi seu filho mais velho, Antônio Ziorze; mas ele não era tão bom quanto seu pai, e acabou não conseguindo conduzir o restaurante; então ele acabou fechando de vez o restaurante depois do falescimento de seu pai, Alessando Enrico Ziorze.</p>
+        <p>Depois de muitos e muitos anos, nós, descendentes de Ziorze resolvemos reabrir o restaurante; nosso objetivo é honrar nosso falescido patriarca, e fazer com que esse restaurante seja um dos melhores e mais famosos do estado de São Paulo, assim como era antigamente.</p>
+
+        <h2>Imagem do restaurante Ziorze há mais de 80 anos atrás</h2>
+        <picture>
+            <source media="(max-width: 800px)" srcset="imagens/imagem-restaurante.jpg">
+            <img src="imagens/imagem-restaurante-grande.jpg" alt="imagem antiga do restaurante">
+        </picture>
+    </main>
+
+    
+    <footer>
+        <p>Site criado por <a href="https://github.com/matheusjorgealves" target="_blank">Matheus Jorge</a></p>
+    </footer>
+
+    <script>
+
+        function mudouTamanho () {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'principal';
+    src: url(../fontes/ROMANUS.otf);
+}
+
+
+/* Estilos gerais */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    --fonte-principal: 'principal';
+
+    --cor01: rgb(247, 246, 220);
+    --cor02: rgb(255, 251, 0);
+    --cor03: rgb(163, 160, 0);
+    --cor04: rgb(236, 107, 1);
+    --cor05: rgb(36, 8, 1);
+}
+
+
+body{
+    background-color: var(--cor03);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    background-color: var(--cor05);  
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    text-align: center;
+}
+header h1{
+    font-size: 8em;
+    color: var(--cor02);
+    padding-bottom: 5px;
+    font-family: 'principal';
+    font-weight: normal;
+}
+header p{
+    font-size: 2.5em;
+    color: var(--cor03);
+}
+
+
+i#burguer {
+    display: block;
+    color: white;
+    background-color: var(--cor05);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 3em;
+}
+
+i#burguer:hover{
+    background-color: rgb(66, 15, 2);
+    transition-duration: .5s;
+}
+
+
+nav{
+    background-color: rgb(66, 15, 2);
+    padding-bottom: 25px;
+    display: none;
+}
+nav a{
+    display: block;
+    background-color: var(--cor02);
+    color: var(--cor05);
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    transition-duration: .5s;
+    width: 30vw;
+    margin: auto;
+   
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+nav a:hover{
+    background-color: rgb(20, 5, 1);
+    border: 1px solid rgb(255, 251, 0);
+    color: white;
+}
+
+
+main{
+    min-width: 200px;
+    max-width: 1000px;
+    background-color: var(--cor01);
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px 15px 0px 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+}
+main h2{
+    margin: 40px 0px 40px 0px;
+    color: var(--cor05);
+    font-size: 3.5em;
+    text-align: center;
+}
+main h3{
+    margin: 20px 0px 20px 0px;
+    color: var(--cor05);
+    font-size: 2em;
+    text-align: left;
+}
+main p{
+    font-size: 1.6em;
+    text-indent: 20px;
+    line-height: 60px;
+    margin-bottom: 5px;
+    text-align: justify;
+    font-weight: normal;
+}
+main li{
+    font-size: 0.8em;
+}
+main img{
+    width: 100%;
+}
+main section{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+main section.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.466);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 25vh 0vh 25vh 0vh;
+}
+main section.imagem p{
+    background-color: rgba(0, 0, 0, 0.562);
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    max-width: 500px;
+}
+main section#pizza p{
+    margin-left: 10px;
+}
+main section#lasanha{
+    background-image: url(../imagens/lasanha-italiana.jpeg);
+}
+main section#macarrao{
+    background-image: url(../imagens/macarrao-italiano.jpg);
+}
+main section#pizza{
+    background-image: url(../imagens/pizza-italiana.jpg);
+}
+main section#drink-limao{
+    background-image: url(../imagens/drink-limao.jpg);
+    background-position: center right;
+}
+main section#drink-italiano{
+    background-image: url(../imagens/drinks-italianos.jpeg);
+    background-position: center right;
+}
+main section#soda-italiana{
+    background-image: url(../imagens/soda-italiana.jpg);
+}
+
+
+section#tela{
+    width: 350px;
+    position: relative;
+    top: -40px;
+    left: 50%;
+    transform: translate(-50%);
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+iframe#tela{
+    position: relative;
+    top: -15px;
+    left: -18px;
+    height: 471px;
+    width: 269px;
+}
+
+
+iframe{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    border: 1.5px solid rgba(0, 0, 0, 0.438);
+}
+
+
+ul{
+    margin-bottom: 35px;
+}
+ul a{
+    font-size: 2.5em;
+    text-decoration: none;
+    color: var(--cor04);
+}
+ul a:hover{
+    color: var(--cor05);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+table{
+    margin: auto;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption{
+    font-size: 1.6em;
+    padding: 10px;
+    background-color: var(--cor05);
+    color: var(--cor02);
+    font-weight: bold;
+}
+
+th{
+    font-size: 1.2em;
+    background-color: var(--cor05);
+    color: var(--cor01);
+    border: 1px solid white;
+}
+
+td, th{
+    padding: 30px;
+}
+
+
+footer{
+    background-color: var(--cor05);
+    color: var(--cor02);
+    text-align: center;
+}
+footer p{
+    padding: 6px 0px 6px 0px;
+    font-size: 1.2em;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor04);
+}
+footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
