@@ -31,6 +31,18 @@ main {
 }
 
 
+h1#principal {
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-family: var(--fonte-principal);
+    position: absolute;
+    height: 30%;
+    left: 35%;
+    transform: translate(-30%, 35%);
+}
+
+
 section {
     width: 80vw;
     height: 60%;
@@ -38,8 +50,8 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.295);
     position: absolute;
     left: 50%;
-    height: 50%;
-    transform: translate(-50%, 50%);
+    height: 45%;
+    transform: translate(-50%, 45%);
     border-radius: 20px;
     padding: 8px;
 }
@@ -73,6 +85,8 @@ div#entrar > h1 {
     background-color: rgb(255, 255, 231);
     border-radius: 20px;
     padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -82,6 +96,9 @@ div#entrar > div#caixa {
     background-color: var(--cor05);
     height: 50px;
     border-radius: 20px;
+    margin-left: 19px;
+    margin-right: 19px;
+    padding-top: 5px;
 }
 
 
