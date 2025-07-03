@@ -29,15 +29,12 @@ i#burguer {
 
 
 nav {
-    width: 99%;
-    border: 1px solid red;
-
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 nav > a {
-    width: 120px;
+    width: 110px;
     margin: 15px;
     padding: 15px;
 }
