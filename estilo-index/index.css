@@ -117,5 +117,5 @@ div#caixa > a {
 
 
 div#caixa > a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
