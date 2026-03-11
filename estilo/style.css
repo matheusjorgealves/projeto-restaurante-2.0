@@ -13,7 +13,7 @@
 }
 
 
-:root{
+:root{ /* Armazenando cores e fontes utilizadas em variáveis */
     --fonte-principal: 'principal';
 
     --cor01: rgb(247, 246, 220);
@@ -38,7 +38,7 @@ header{
     padding-bottom: 15vh;
     text-align: center;
 
-    display: flex;
+    display: flex; /* Flexbox */
     flex-flow: column nowrap;
 }
 header > h1{
@@ -69,16 +69,16 @@ i#burguer:hover{
 }
 
 
-nav{
+nav{ /* Menu */
     background-color: rgb(66, 15, 2);
     text-align: center;
 
     display: flex;
     flex-flow: column nowrap;
-    display: none;
+    display: none; /* Escondi o menu */
 }
 nav a{
-    display: block;
+    display: block; /* Mostrei o menu */
     background-color: var(--cor02);
     color: var(--cor05);
     font-size: 1.5em;
@@ -129,7 +129,7 @@ main h3{
 main p{
     font-size: 1.6em;
     text-indent: 20px;
-    line-height: 60px;
+    line-height: 60px; /* Espaçamento entre linhas */
     margin-bottom: 5px;
     text-align: justify;
     font-weight: normal;

@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 
-* {
+* { /* Configurações gerais */
     margin: 0px;
     padding: 0px;
 }
 
 
-:root {
+:root { /* Colocando as cores e fontes utilizadas em variáveis */
     --fonte-principal: 'principal';
 
     --cor01: rgb(247, 246, 220);
@@ -21,13 +21,14 @@
 body {
     height: 100vh;
     width: 100vw;
+    /* O body (corpo) está ocupando 100% da altura e da largura da tela*/
 }
 
 
 main {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom, rgb(209, 206, 0), var(--cor03));
+    background-image: linear-gradient(to bottom, rgb(209, 206, 0), var(--cor03)); /* Degradê */
 }
 
 
@@ -36,10 +37,11 @@ h1#principal {
     color: white;
     font-size: 4em;
     font-family: var(--fonte-principal);
-    position: absolute;
+    position: absolute; /* Vou definir a posição */
     height: 30%;
     left: 35%;
-    transform: translate(-30%, 35%);
+    /* Defini a posição */
+    transform: translate(-30%, 35%); /* Ajustei a posição */
     text-shadow: 2px 1px 1px var(--cor05);
 }
 
@@ -53,7 +55,7 @@ section {
     left: 50%;
     height: 45%;
     transform: translate(-50%, 45%);
-    border-radius: 20px;
+    border-radius: 20px; /* Arredondei as bordas */
     padding: 8px;
 }
 
@@ -113,6 +115,7 @@ div#caixa > a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+    font-weight: normal;
 } 
 
 
