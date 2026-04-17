@@ -28,6 +28,18 @@
 
 
     <main>
+
+        <div id="carrinho-box"> <!-- Carrinho -->
+            <h2><span class="material-icons">shopping_cart</span><h2>
+
+            <div id="carrinho-itens"></div>
+
+            <button onclick="limparCarrinho()">
+                Limpar carrinho
+            </button>
+        </div>
+
+
         <section class="nao-imagem">
             <h2>Escolha uma das opções abaixo</h2>
             <ul>
@@ -50,7 +62,13 @@
 
 
         <section class="nao-imagem">
-            <h2>Martini</h2>
+            <div class="produto">
+            <h2>Martini - R$30,00</h2>
+
+            <button onclick="adicionarItem('Martini', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
             <p>Martini é uma marca italiana de bebidas, principalmente de vermute, que é um vinho fortificado. 
                 <h3>Vermute Martini:</h3>
                     <ul>
@@ -67,14 +85,26 @@
         </section>
 
 
-        <h2>Drink de Limão</h2>
+        <div class="produto">
+            <h2>Drink de limão - R$30,00</h2>
+
+            <button onclick="adicionarItem('Drink de limao', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
         <section class="imagem" id="drink-limao">
             <p>Drinks são bebidas famosas e de sucesso em todo o mundo; mas a Itália se destaca entre todos os países como um país que produz as melhores bebidas. Um grande exemplo disso é o clássico Negroni</p>
         </section>
 
 
         <section class="nao-imagem">
-            <h2>Rossini</h2>
+            <div class="produto">
+            <h2>Rossini - R$30,00</h2>
+
+            <button onclick="adicionarItem('Rossini', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
             <p>O Rossini é um coquetel italiano feito com Prosecco e purê de morangos. É uma variação do Bellini, um drink de Veneza que leva Prosecco e purê de pêssegos. O Rossini é leve, refrescante e tem uma coloração rosada.  
                 <h3>Características</h3>
                 <ul>
@@ -86,7 +116,13 @@
 
 
         <section class="nao-imagem">
-            <h2>Cappuccino</h2>
+            <div class="produto">
+            <h2>Cappuccino - R$30,00</h2>
+
+            <button onclick="adicionarItem('Cappuccino', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
             <p>O cappuccino italiano é uma bebida à base de espresso, leite vaporizado e espuma de leite, tradicionalmente servida em xícaras de 150–180 ml. É uma bebida equilibrada entre intensidade e suavidade.   
                 <h3>Características</h3>
                 <ul>
@@ -97,14 +133,26 @@
         </section>
 
 
-        <h2>Drinks Italianos</h2>
+        <div class="produto">
+            <h2>Drinks italianos - R$30,00</h2>
+
+            <button onclick="adicionarItem('Drinks italianos', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
         <section class="imagem" id="drink-italiano">
             <p>Este é um exemplo da beleza dos drinks italianos, a Itália além de produzir ótimos drinks, também produz grandes obras de arte como esse Rossini</p>
         </section>
 
 
         <section class="nao-imagem">
-            <h2>Spritz</h2>
+            <div class="produto">
+            <h2>Spritz - R$30,00</h2>
+
+            <button onclick="adicionarItem('Spritz', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
             <p>Spritz é um coquetel italiano à base de vinho, água gaseificada e bitters digestivos. É um drink popular que é consumido como aperitivo.    
                 <h3>Variantes</h3>
                 <ul>
@@ -117,19 +165,37 @@
 
 
         <section class="nao-imagem">
-            <h2>Garibaldi</h2>
+            <div class="produto">
+            <h2>Garibaldi - R$30,00</h2>
+
+            <button onclick="adicionarItem('Garibaldi', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
             <p>Uma delícia de coquetel que se resolve com dois ingredientes: Campari e suco de laranja. Esta versão foi preparada pelo bartender Lula Mascella, do bar Picco, com uma importante diferença, aqui, o drinque é batido e não mexido.</p>
         </section>
 
 
-        <h2>Soda Italiana</h2>
+        <div class="produto">
+            <h2>Soda italiana - R$30,00</h2>
+
+            <button onclick="adicionarItem('Soda', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
         <section class="imagem" id="soda-italiana">
             <p>A soda é uma clássica bebida, que acabou ganhando muita popularidade e fama na Itália, a partir disso foi surgindo algumas variações da clássica bebida.</p>
         </section>
 
 
         <section class="nao-imagem">
-            <h2>Bellini</h2>
+            <div class="produto">
+            <h2>Bellini - R$30,00</h2>
+
+            <button onclick="adicionarItem('Bellini', 30)"> <!-- Botão para adicionar ao carrinho-->
+                Adicionar
+            </button>
+        </div>
             <p>O Bellini é um coquetel italiano feito com prosecco e purê de pêssego. É uma bebida sofisticada e refrescante, ideal para celebrações.     
                 <h3>Dicas</h3>
                 <ul>
@@ -140,21 +206,13 @@
                 </ul>
         </section>
     </main>
-
     
+
     <footer>
     <p>Site criado por <a href="https://github.com/matheusjorgealves" target="_blank">Matheus Jorge</a></p>
     </footer>
 
 
-    <script>
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'block'
-            }
-        }
-    </script>
+    <script src="../javascript/script.js"></script>
 </body>
 </html>
