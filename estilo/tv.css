@@ -50,3 +50,34 @@ nav#menu {
     /*display: block;*/
     background-color: var(--cor05);
 }
+
+
+#carrinho-box { /* Configurações do carrinho */
+    position: fixed;
+
+    top: 75%;
+    right: 20px;
+    transform: translateY(-50%); /* centraliza verticalmente */
+
+    width: 280px;
+    max-height: 400px;
+
+    background: rgba(0, 0, 0, 0.438);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    font-size: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+#carrinho-box button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+#carrinho-itens {
+    overflow-y: auto; /* ativa o scroll */
+    max-height: 200px; /* limite da área de itens */
+    margin-top: 10px;
+}

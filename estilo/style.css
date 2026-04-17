@@ -193,23 +193,32 @@ main section#soda-italiana{
 
 
 #carrinho-box { /* Configurações do carrinho */
-
     position: fixed;
-    top: 560px;
-    right: 10px;
 
-    width: 250px;
-    max-height: 400px;
+    top: 75%;
+    right: 20px;
+    transform: translateY(-50%); /* centraliza verticalmente */
 
-    background: rgba(255, 255, 255, 0.575);
-    padding: 10px;
+    width: 280px;
+    max-height: 400px; 
 
-    font-size: 4px;
+    background: rgba(0, 0, 0, 0.438);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+
+    font-size: 12px;
 
     display: flex;
     flex-direction: column;
 }
 #carrinho-box button {
+    margin-top: 10px;
+    cursor: pointer;
+}
+#carrinho-itens {
+    overflow-y: auto; /* ativa o scroll */
+    max-height: 200px; /* limite da área de itens */
     margin-top: 10px;
 }
 
