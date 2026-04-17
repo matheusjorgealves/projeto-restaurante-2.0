@@ -6,7 +6,7 @@
 
 header {
     height: 400px;
-    width: 99.2vw;
+    width: 100%;
     padding: 0px;
 
     display: flex;
@@ -29,7 +29,7 @@ i#burguer {
 
 
 nav {
-    width: 99%;
+    width: 100%;
 
     display: flex;
     flex-flow: row wrap;
